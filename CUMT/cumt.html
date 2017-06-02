@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+<meta charset="UTF-8">
+<title>我在CUMT</title>
+<link href="cumt.css" rel="stylesheet" />
+</head>
+
+<body>
+
+<div id="header">
+    <a href="#question">
+        <img src="images/3.png">CUMT</img>
+    </a>
+</div>
+
+
+
+<div id="content">
+<div class="colorBlock">
+  <div id="red" >
+  <p><a href="http://202.119.206.62/" target="_blank">新教务系统1</a></p>
+  <p><a href="http://58.218.185.194/" target="_blank">新教务系统2</a></p>
+  <p><a href="http://202.119.206.61/" target="_blank">旧教务系统</a></p>
+  <p><a href="http://jwb.cumt.edu.cn/" target="_blank">教务部</a></p>
+  <br>
+  </div>
+  </div>  
+
+<div class="colorBlock">
+  <div id="green" >
+  <p><a href="http://121.248.104.139:8080/opac/" target="_blank">检索书目</a></p>
+  <p><a href="http://lib.cumt.edu.cn/27/d5/c1361a75733/page.htm" target="_blank">检索文献</a></p>
+  <p><a href="http://121.248.104.139:8080/reader/book_lst.php" target="_blank">书目续借</a></p>
+  <p><a href="http://lib.cumt.edu.cn/" target="_blank">图书馆</a></p>
+  <br>
+  </div>
+  </div>  
+
+<div class="colorBlock">
+  <div id="yellow" >
+  <p><a href="http://114.213.4.2/sportscore/default.aspx" target="_blank">体育成绩查询</a></p>
+  <p><a href="http://jwb.cumt.edu.cn/3254/list.htm" target="_blank">校历</a></p>
+  <p><a href="http://ykt.cumt.edu.cn/homeLogin.action" target="_blank">校园卡消费查询</a></p>
+  <p><a href="https://vpn.cumt.edu.cn/zhcx5/,DanaInfo=cwb.cumt.edu.cn+" target="_blank">学费查询（仅限校内网或登陆VPN查看）</a></p>
+  <br>
+  </div>
+  </div>  
+
+<div class="colorBlock">
+  <div id="blue" style="padding-top:27px;padding-bottom:15px;">
+    <a href="http://vpn.cumt.edu.cn" target="_blank">
+  <img src="images/1.gif" width="480px" height="280px"/>
+    </a>
+  <br>
+  </div>
+  </div>  
+<br>
+
+<div id="question" style="text-align:center">
+<h1>问卷调查</h1>
+<form name="questionnaire" action="cumt.asp" method="get">
+
+
+
+<table>
+  <tr>
+    <td>学号： </td>
+    <td><input type="text" name="name" style="width:220px;"/></td>
+  </tr>
+  <tr>
+    <td>密码：</td>
+    <td><input type="password" name="pwd" placeholder="未注册用户提交后自动注册" style="width:220px;"/></td>
+  </tr>
+  <tr>
+    <td>学科类别：</td>
+    <td style="vertical-align:middle; text-align:left;">
+    <select name="subject" style="width:225px;">
+        <option value="1" selected>工科</option>
+        <option value="2">理科</option>
+        <option value="3">文科</option>
+    </select> </td>
+  </tr>
+  <tr>
+    <td >性别：</td>
+    <td><input type="radio" name="sex" value="man" checked/>男
+        <input type="radio" name="sex" value="woman" style='margin-left:70px'/>女</td>
+  </tr>
+
+<tr>
+  <td>常用的功能：</td>
+  <td><input type="checkbox" name="jwxt" checked>教务系统<br>
+      <input type="checkbox" name="tsg" checked>图书馆<br>
+      <input type="checkbox" name="xxcx" >信息查询
+  </td>
+<tr>
+    <td>留言：</td>
+    <td>
+      <textarea name="message" cols="26" rows="10">欢迎告诉我您需要的功能！</textarea>
+</tr>
+<tr>
+    <td>BUG截图：</td>
+    <td>
+     <input type="file" name="file" size="30" maxlength="60"></td>
+</tr>
+</table>
+<input type="reset" name="reset" value="重置">
+<input type="submit" value="提交" style='margin-left:40px'><br>
+</form>
+</div>
+</div>
+
+<div id="page">
+<iframe src="http://www.cumt.edu.cn" width="100%" height="100%" frameborder="0"></iframe>
+</div>
+
+<div id="footer" >
+Copyright ©
+<a href="http://www.willstudio.cn" >Will Ho</a>
+</div>
+
+</body>
+</html>
