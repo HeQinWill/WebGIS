@@ -87,7 +87,8 @@ body {
 
 .colorBlock a{
     color:#ffffff;
-    font-size: 22px
+    font-size: 22px;
+    text-decoration: none
 }
 
 table{
