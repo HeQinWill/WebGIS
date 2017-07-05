@@ -1,5 +1,9 @@
 @charset "utf-8";
 
+body, html {width: 100%;height: 100%;margin:0;font-family:"微软雅黑";}
+		#allmap{width:100%;height:920px;margin-left:0;float:right}
+		p{margin-left:5px; font-size:14px;}
+
 body {
 	padding: 0;
     margin: 0;
@@ -19,20 +23,24 @@ body {
     text-align: center;
     padding-top:5px
 }
-#page{
-    background-color:#EEEEEE;
-    height:1860px;
-    width:40%;
-    float:left
-}
+
 #content{
     background: 
-		url(images/1.png) no-repeat 0 0;
+		url(../CUMT/images/1.png) no-repeat 0 0;
     background-size:cover;
-    height:1860px;
-    width:60%;
+    height:920px;
+    width:80%;
     float:left
 }
+
+#panel{
+    background-color:#D2E9FF;
+    background-size:cover;
+    height:920px;
+    width:20%;
+    float:left
+}
+
 #footer{
    background-color:#027DA3;
    text-align:center;
@@ -49,51 +57,4 @@ body {
     color: #add9e4;
     font-size: 16px;
     text-decoration: none
-}
-
-.colorBlock{
-    text-align: center;
-    width:90% ;
-    height:300px;
-    margin-left:5%;
-    color:white;
-    font-family: 微软雅黑;
-    font-size :22px
-}
-.colorBlock #red{
-    background: 
-		url(images/c1.png);
-    background-size:cover;
-    padding-top:68px
-}
-.colorBlock #green{
-    background: 
-		url(images/c2.png);
-    background-size:cover;
-    padding-top:68px
-}
-.colorBlock #yellow{
-    background: 
-		url(images/c3.png);
-    background-size:cover;
-    padding-top:68px
-}
-.colorBlock #blue{
-    background: 
-		url(images/c4.png);
-    background-size:cover;
-    padding-top:68px
-}
-
-.colorBlock a{
-    color:#ffffff;
-    font-size: 22px
-}
-
-table{
-    margin:0px auto
-}
-table td{
-    vertical-align:top; 
-    text-align:left
 }

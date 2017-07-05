@@ -15,73 +15,20 @@
 <script src="https://cdn.bootcss.com/jquery/3.2.1/core.js"></script>
 <script src="http://cdn.bootcss.com/jquery/3.2.1/jquery.js"></script>-->
 
-
     <!-- gallery 
 <link rel="stylesheet" href="assets/gallery/blueimp-gallery.min.css">-->
     <!-- animate.css -->
     <link rel="stylesheet" href="assets/animate/animate.css" />
     <link rel="stylesheet" href="assets/animate/set.css" />
 
-
-
-
-
     <!-- javascript 
 <script type="text/javascript" src="./ArcSDE0x01 – Will Studio_files/jquery.js.下载"></script>-->
 
     <!--Stylesheet
-<link rel="stylesheet" href="assets/style.css">
--->
+<link rel="stylesheet" href="assets/style.css">-->
 
     <style>
-        /*字体和颜色*/
-
-        .red-text {
-            color: red;
-            font-family: Lobster;
-        }
-        /*字体和颜色*/
-        /*header*/
-
-        .navbar-nav>li>a {
-            font-size: 16px;
-            line-height: 60px;
-        }
-
-        .navbar-fixed-top {
-            top: 0px;
-        }
-
-        .navbar-inverse {
-            background: #111;
-        }
-
-        .navbar-default .navbar-nav>.active>a,
-        .navbar-default .navbar-nav>.active>a:hover,
-        .navbar-default .navbar-nav>.active>a:focus {
-            background: none;
-            color: #21abca;
-        }
-        /*header*/
-        /*menu*/
-
-        #menu {
-            padding-top: 6em;
-        }
-
-        #menu figcaption a {
-            border: 1px solid #fff;
-            margin-top: 1em;
-            display: inline-block;
-            color: #fff;
-            padding: 0 2em;
-        }
-
-        #menu figcaption a:hover {
-            text-decoration: none;
-            padding: 0 3em;
-        }
-        /*menu*/
+       @import url("index.css")
     </style>
 
 </head>
@@ -111,7 +58,7 @@
                     <div class="navbar-collapse  collapse">
                         <ul class="nav navbar-nav navbar-right scroll">
                             <li class="active"><a href="#menu">Menu</a></li>
-                            <li><a href="#about">About</a></li>
+                            <li><a href="#contact">Contact</a></li>
                         </ul>
                     </div>
                     <!-- #Nav Ends -->
@@ -137,7 +84,7 @@
             <figcaption>
                 <h2>APP</h2>
                 <p>应用<br>不曾如此好用<br>
-                    <a href="images/4.png">View more</a></p>
+                    <a href="APP/app.html">View more</a></p>
             </figcaption>
         </figure>
 
@@ -146,7 +93,7 @@
             <figcaption>
                 <h2>PPT</h2>
                 <p>灵感<br>点滴之间<br>
-                    <a href="images/2.png">View more</a></p>
+                    <a href="http://www.yanj.cn/">View more</a></p>
             </figcaption>
         </figure>
 
@@ -155,7 +102,7 @@
             <figcaption>
                 <h2>ENGLISH</h2>
                 <p>沟通<br>从未如此畅通<br>
-                    <a href="images/5.png">View more</a></p>
+                    <a href="https://www.collinsdictionary.com/">View more</a></p>
             </figcaption>
         </figure>
 
@@ -164,7 +111,7 @@
             <figcaption>
                 <h2>GIS</h2>
                 <p>技术<br>探索世界<br>
-                    <a href="images/3.png">View more</a></p>
+                    <a href="../WebGIS/CUMT/cumtMap.html">View more</a></p>
             </figcaption>
         </figure>
 
@@ -173,14 +120,59 @@
             <figcaption>
                 <h2>IDEA</h2>
                 <p>思索<br>漫漫长路<br>
-                    <a href="images/6.png">View more</a></p>
+                    <a href="IDEA/idea.html">View more</a></p>
             </figcaption>
         </figure>
     </div>
     <!-- menu-->
+    <!-- Contact section -->
+    <section id="contact" class="bg-purple">
+        <div class="container-fluid section-5-inner">
+            <div class="row">
+                <div class="col-xs-12 text-white text-xs-center">
+                    <h2>Contact Us</h2>
+                    <p>欲知更多信息，请联系我们！</p>
+                </div>
+            </div>
+            <div class="row">
+                <form action="index.html" method="post">
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                        <div class="form-group">
+                            <input type="text" id="contact_name" name="contact_name" class="form-control" placeholder="Name" required/>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="contact_email" name="contact_email" class="form-control" placeholder="Email" required/>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="contact_subject" name="contact_subject" class="form-control" placeholder="Subject" required/>
+                        </div>
+                    </div>
 
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                        <div class="form-group">
+                            <textarea id="contact_message" name="contact_message" class="form-control" rows="6" placeholder="Your message" required></textarea>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12">
+                        <button type="submit" class="btn btn-primary center">提交</button>
+                    </div>
+                </form>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="row">
+                <footer class="col-xs-12">
+                    <p class="text-white">Copyright &copy;
+                        <a href="http://www.willstudio.cn" target="_blank">He Qin</a></p>
+                </footer>
+            </div>
+        </div>
+    </section>
 
 
 </body>
-
 </html>

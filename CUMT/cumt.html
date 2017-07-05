@@ -10,7 +10,7 @@
 <body>
 
   <div id="header">
-    <a href="#question">
+    <a href="cumtMap.html">
         <img src="images/3.png">CUMT
     </a>
   </div>
@@ -61,9 +61,6 @@
     <div id="question" style="text-align:center">
       <h1>问卷调查</h1>
       <form name="questionnaire" action="cumt.asp" method="get">
-
-
-
         <table>
           <tr>
             <td>学号： </td>
@@ -87,7 +84,6 @@
             <td><input type="radio" name="sex" value="man" checked/>男
               <input type="radio" name="sex" value="woman" style="margin-left:70px" />女</td>
           </tr>
-
           <tr>
             <td>常用的功能：</td>
             <td><input type="checkbox" name="jwxt" checked>教务系统<br>
@@ -119,9 +115,35 @@
 
   <div id="footer">
     Copyright ©
-    <a href="http://www.willstudio.cn">He Qin</a>
+    <a href="http://www.willstudio.cn">He Qin</a><br>
+    <button type="button" onclick="loadXMLDoc()">点击查看详情</button>
   </div>
 
+<script>
+function loadXMLDoc()
+{
+	var xmlhttp;
+	if (window.XMLHttpRequest)
+	{
+		//  IE7+, Firefox, Chrome, Opera, Safari 浏览器执行代码
+		xmlhttp=new XMLHttpRequest();
+	}
+	else
+	{
+		// IE6, IE5 浏览器执行代码
+		xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+	}
+	xmlhttp.onreadystatechange=function()
+	{
+		if (xmlhttp.readyState==4 && xmlhttp.status==200)
+		{
+			document.getElementById("footer").innerHTML=xmlhttp.responseText;
+		}
+	}
+	xmlhttp.open("GET","description.txt",true);
+	xmlhttp.send();
+}
+</script>
 </body>
 
 </html>

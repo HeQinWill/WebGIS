@@ -27,10 +27,10 @@ body {
 }
 #content{
     background: 
-		url(images/1.png) no-repeat 0 0;
+		url(../CUMT/images/1.png) no-repeat 0 0;
     background-size:cover;
     height:1860px;
-    width:60%;
+    width:100%;
     float:left
 }
 #footer{
@@ -57,37 +57,14 @@ body {
     height:300px;
     margin-left:5%;
     color:white;
-    font-family: 微软雅黑;
+    font-family: NotoSerifCJKsc;
     font-size :22px
-}
-.colorBlock #red{
-    background: 
-		url(images/c1.png);
-    background-size:cover;
-    padding-top:68px
-}
-.colorBlock #green{
-    background: 
-		url(images/c2.png);
-    background-size:cover;
-    padding-top:68px
-}
-.colorBlock #yellow{
-    background: 
-		url(images/c3.png);
-    background-size:cover;
-    padding-top:68px
-}
-.colorBlock #blue{
-    background: 
-		url(images/c4.png);
-    background-size:cover;
-    padding-top:68px
 }
 
 .colorBlock a{
     color:#ffffff;
-    font-size: 22px
+    font-size: 22px;
+    text-decoration: none
 }
 
 table{
